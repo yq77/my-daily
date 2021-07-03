@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <script src="../jq.js"></script>
+
+
+       <style>
+              div {
+                     width: 200px;
+                     height: 200px;
+                     background-color: pink;
+              }
+       </style>
+</head>
+
+<body>
+       <h1 style="color: red;">基本选择器</h1>
+       <div id="ID">我的id是ID</div>
+       <div class="class">我的class是class</div>
+       <span>我是span标签</span>
+       <span class="span_1">我是1</span>
+       <span class="span_2">我是2</span>
+
+       <ul>
+              <li>我的父辈是ul</li>
+              <ol>
+                     <li>我的父辈是ol</li>
+              </ol>
+              <li>我的父辈是li</li>
+              <li>
+                     <em>我有兄弟叫i</em>
+                     <i>我有个兄弟叫em</i>
+
+              </li>
+       </ul>
+
+
+
+
+       <script>
+              // id选择器
+              $("#ID").css("width", "300");
+              // 类选择器
+              $(".class").css("backgroundColor", "blue")
+              // 标签选择器
+              $("span").css("color", "purple")
+              // 通配符选择器
+              $("*").css("margin", "20px")
+              // css样式要用驼峰命名法
+              $(".span_1,.span_2 ").css("fontSize", "30px")
+              // 后代选择器
+              $("ul li").css("color", "green")
+              // 子元素选择器
+              $("ul > li").css("fontSize", "33px")
+              // 兄弟选择器 选择i
+              $("em + i").mouseover(function () {
+                     console.log(11);
+              })
+
+              
+
+       </script>
+</body>
+
+</html>

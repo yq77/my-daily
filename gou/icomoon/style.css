@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7gyjy3');
+  src:  url('fonts/icomoon.eot?7gyjy3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7gyjy3') format('truetype'),
+    url('fonts/icomoon.woff?7gyjy3') format('woff'),
+    url('fonts/icomoon.svg?7gyjy3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-adjust:before {
+  content: "\e91f";
+}
+.icon-headphones2:before {
+  content: "\e912";
+}
+.icon-th-large-outline:before {
+  content: "\e920";
+}
+.icon-home-outline:before {
+  content: "\e921";
+}
+.icon-user-outline:before {
+  content: "\e922";
+}
+.icon-message-typing:before {
+  content: "\e91d";
+}
+.icon-clipboard:before {
+  content: "\e923";
+}
+.icon-bluetooth:before {
+  content: "\e91e";
+}
+.icon-shopping-cart:before {
+  content: "\e924";
+}
+.icon-angular:before {
+  content: "\e913";
+  color: #dd0031;
+}
+.icon-baidu:before {
+  content: "\e914";
+  color: #2319dc;
+}
+.icon-sinaweibo:before {
+  content: "\e915";
+  color: #e6162d;
+}
+.icon-wechat:before {
+  content: "\e916";
+  color: #7bb32e;
+}
+.icon-align-top:before {
+  content: "\e900";
+}
+.icon-heart-outlined:before {
+  content: "\e901";
+}
+.icon-heart:before {
+  content: "\e902";
+}
+.icon-camera1:before {
+  content: "\e903";
+}
+.icon-cheveron-down:before {
+  content: "\e904";
+}
+.icon-cheveron-left:before {
+  content: "\e905";
+}
+.icon-cheveron-right:before {
+  content: "\e906";
+}
+.icon-cheveron-up:before {
+  content: "\e907";
+}
+.icon-globe:before {
+  content: "\e908";
+}
+.icon-headphones1:before {
+  content: "\e909";
+}
+.icon-location-current:before {
+  content: "\e90a";
+}
+.icon-mic:before {
+  content: "\e90b";
+}
+.icon-plugin:before {
+  content: "\e90c";
+}
+.icon-reload:before {
+  content: "\e90d";
+}
+.icon-search:before {
+  content: "\e90e";
+}
+.icon-user:before {
+  content: "\e90f";
+}
+.icon-zoom-in:before {
+  content: "\e910";
+}
+.icon-zoom-out:before {
+  content: "\e911";
+}
+.icon-navigation-more:before {
+  content: "\e925";
+}
+.icon-cart:before {
+  content: "\e917";
+}
+.icon-play:before {
+  content: "\e918";
+}
+.icon-home2:before {
+  content: "\e919";
+}
+.icon-camera:before {
+  content: "\e91a";
+}
+.icon-headphones:before {
+  content: "\e91b";
+}
+.icon-connection:before {
+  content: "\e91c";
+}
+.icon-mobile2:before {
+  content: "\e959";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-play2:before {
+  content: "\ea15";
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-sina-weibo:before {
+  content: "\ea9a";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-android:before {
+  content: "\eac0";
+}
+.icon-windows:before {
+  content: "\eac1";
+}
+.icon-IE:before {
+  content: "\eadb";
+}

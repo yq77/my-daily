@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jq.js"></script>
+    <style>
+     
+      
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+    </ul>
+    <ol>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+    </ol>
+
+    <div>
+      
+        <a href="#">你好</a>
+        <a href="#">我好</a>
+        <a href="#">我是mary</a>
+        <a href="#">你是jack</a>
+        <a href="#">我们很无聊</a>
+        <div style="width: 100px ;height: 100px;"></div>
+    </div>
+
+    <div>
+        <p>我是p</p>
+    </div>
+    <script>
+        $(function() {
+            $("ul li:first").css("color", "red");
+            $("ul li:eq(2)").css("color", "blue");
+            // 奇数
+            $("ol li:odd").css("color", "skyblue");
+            // 偶数
+            $("ol li:even").css("color", "pink");
+
+            // 含有“我”的元素
+            $("a:contains('我')").css("textDecoration","none");
+            // 选择空的元素
+            $("div:empty").css("backgroundColor","yellow")
+            // 选取含有选择器所匹配的元素的元素
+            $("div:has(p)").css("fontSize","88px")
+            // 选取含有子元素的或文本的元素  $('div:parent')
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <style>
+              table {
+                     width: 500px;
+                     height: 249px;
+              }
+              th {
+                     height: 35px;
+              }
+              table,
+              td,
+              th {
+                     border: 1px solid pink;
+                     /* 合并相邻边框 */
+                     border-collapse: collapse;
+                     font-size: 14px;
+                     text-align: center;
+              }
+       </style>
+</head>
+
+<body>
+       <!-- 这些标签要写到表格标签table里面去 -->
+       <table align="center" border=1 cellpadding=10 cellspacing=0 >
+              <tr>
+                     <th>姓名</th>
+                     <th>性别</th>
+                     <th>年龄</th>
+              </tr>
+              <tr>
+                     <td>刘德华</td>
+                     <td>男</td>
+                     <td>56</td>
+              </tr>
+              <tr>
+                     <td>张学友</td>
+                     <td>男</td>
+                     <td>58</td>
+              </tr>
+              <tr>
+                     <td>郭富城</td>
+                     <td>男</td>
+                     <td>51</td>
+              </tr>
+              <tr>
+                     <td>黎明</td>
+                     <td>男</td>
+                     <td>57</td>
+              </tr>
+       </table>
+       <br />
+       <table align="center" border=1 cellpadding=10 cellspacing=0>
+              <thead>
+                     <tr>
+                            <th>排名</th>
+                            <th>关键词</th>
+                            <th>趋势</th>
+                            <th>今日搜索</th>
+                            <th>最近七日</th>
+                            <th>相关链接</th>
+                     </tr>
+              </thead>
+              <tbody>
+                     <tr>
+                            <td>1</td>
+                            <td>鬼吹灯</td>
+                            <td><img src="../imges/arrow.jpg" width=15></td>
+                            <td>345</td>
+                            <td>123</td>
+                            <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a>
+                                   <a href="https://baike.baidu.com" target="_blank">百科</a>
+                                   <a href="https://www.baidu.com" target="_blank">百度</a>
+                            </td>
+                     </tr>
+                     <tr>
+                            <td>2</td>
+                            <td>盗墓笔记</td>
+                            <td><img src="../imges/arrow.jpg" width=15></td>
+                            <td>124</td>
+                            <td>675432</td>
+                            <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a>
+                                   <a href="https://baike.baidu.com" target="_blank">百科</a>
+                                   <a href="https://www.baidu.com" target="_blank">百度</a></td>
+                     </tr>
+                     <tr>
+                            <td>3</td>
+                            <td>西游记</td>
+                            <td><img src="../imges/上.jpg" width=35></td>
+                            <td>212</td>
+                            <td>7654</td>
+                            <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a>
+                                   <a href="https://baike.baidu.com" target="_blank">百科</a>
+                                   <a href="https://www.baidu.com" target="_blank">百度</a></td>
+                     </tr>
+                     <tr>
+                            <td>4</td>
+                            <td>东游记</td>
+                            <td><img src="../imges/上.jpg" width=35></td>
+                            <td>23</td>
+                            <td>345</td>
+                            <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a>
+                                   <a href="https://baike.baidu.com" target="_blank">百科</a>
+                                   <a href="https://www.baidu.com" target="_blank">百度</a></td>
+                     </tr>
+                     <tr>
+                            <td>5</td>
+                            <td>甄嬛传</td>
+                            <td><img src="../imges/arrow.jpg" width=15></td>
+                            <td>121</td>
+                            <td>678</td>
+                            <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a>
+                                   <a href="https://baike.baidu.com" target="_blank">百科</a>
+                                   <a href="https://www.baidu.com" target="_blank">百度</a></td>
+                     </tr>
+                     <tr>
+                            <td>6</td>
+                            <td>水浒传</td>
+                            <td><img src="../imges/上.jpg" width=35></td>
+                            <td>576576</td>
+                            <td>34</td>
+                            <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a>
+                                   <a href="https://baike.baidu.com" target="_blank">百科</a>
+                                   <a href="https://www.baidu.com" target="_blank">百度</a></td>
+                     </tr>
+                     <tr>
+                            <td>7</td>
+                            <td>三国演义</td>
+                            <td><img src="../imges/上.jpg" width=35></td>
+                            <td>234</td>
+                            <td>479</td>
+                            <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a>
+                                   <a href="https://baike.baidu.com" target="_blank">百科</a>
+                                   <a href="https://www.baidu.com" target="_blank">百度</a></td>
+                     </tr>
+              </tbody>
+       </table>
+
+       <br />
+       <table align="center" border=1 cellpadding=10 cellspacing=0 width=500>
+              <thead>
+                     <tr>
+                            <th>一</th>
+                            <th>二</th>
+                            <th colspan=2>三</th>
+                     </tr>
+              </thead>
+              <tbody>
+                     <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                     </tr>
+                     <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                     </tr>
+                     <tr>
+                            <td rowspan=2></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                     </tr>
+                     <tr>
+
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                     </tr>
+              </tbody>
+       </table>
+</body>
+
+
+</html>

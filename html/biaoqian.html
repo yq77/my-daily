@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!-- link  定义文档与外部资源之间的关系，最常用于连接样式表 -->
+       <link rel="stylesheet" href="#">
+       <!-- meta 提供关于 HTML 文档的元数据 -->
+       <meta charset="UTF-8">
+       <!-- http-equiv 告知浏览器的名字,content 行为或者内容的具体内容 -->
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- title 定义文档的标题 -->
+       <title>页面名字</title>
+</head>
+<body>
+       <h1>标题标签</h1>
+       <p>我是一个段落标签</p>
+       <h2>标题一共六级选，</h2>
+       <h3>文字加粗一行显。</h3>
+       <h4>由大到小依次减，</h4>
+       <h5>从重到轻随之变。</h5>
+       <h6>顺口溜溜溜。</h6>
+
+
+       <h2>无序列表：</h2>
+       <h4>计划表</h4>
+       <ul>
+              <li>英语四级</li>
+              <li>html</li>
+              <li>减重</li>
+              <li>跑步</li>
+       </ul>
+       <h2>有序列表：</h2>
+       <h4>粉丝排行榜</h4>
+       <ol>
+              <li>你</li>
+              <li>我</li>
+              <li>他</li>
+              <li>她</li>
+       </ol>
+       <h2>自定义列表：</h2>
+       <dl>
+              <dt>关注我们</dt>
+              <dd>新浪微博</dd>
+              <dd>官方微信</dd>
+              <dd>官方QQ</dd>
+       </dl>
+
+       我是<strong>加粗</strong>的文字<br/>
+       我是<b>加粗</b>的文字<br/>
+       我是<em>倾斜</em>的文字<br/>
+       我是<i>倾斜</i>的文字<br/>
+       我是<del>删除线</del>的文字<br/>
+       我是<s>删除线</s>的文字<br/>
+       我是<ins>下划线</ins>的文字<br/>
+       我是<u>下划线</u>的文字<br/>
+
+       <h4>1.外部链接</h4>
+       target 打开窗口的方式 默认的值是 _self 当前窗口打开页面 ， _blank 新窗口打开页面<br />
+       <a href="http://www.qq.com" target="_blank"> 腾讯</a><br />
+       <a href="https://www.baidu.com/" target="_blank"> 百度</a><br />
+       甄嬛传老粉毛端妃：<a href="https://www.bilibili.com/video/BV1AV411k7s8?p=2" target="_blank"> 《凤凰于飞》毛不易、秦海璐</a><br />
+       <h4>2.内部链接:网站内部页面之间的相互链接</h4>
+       <a href="标签.html" target="_blank">yiyizi</a>
+       <h4>3.空链接:#</h4>
+       <a href="#" target="_blank" target="_blank"> 未计划</a><br />
+       <h4>4.下载链接:地址链接的是 文件  .exe 或者是 zip 等压缩包的格式</h4>
+       <a href="vscode创建页面.zip">下载文件</a>
+       <h4>5.网页元素的链接</h4>
+       爱奇艺：<br /><a href="https://www.iqiyi.com/" target="_blank"><img src="../imges/mby/2.jpg" width="250" /></a>
+
+
+
+       <h2> input 标签的属性</h2>
+       <form>
+              <!-- text 文本框，用户可以输入任何文字 -->
+              <!-- value 属性值，主要给后台人员使用 -->
+              <!-- maxlength 规定输入字段中字符的最大长度 -->
+              用户名：<input type="text" name="username" placeholder="请输入用户名" maxlength=6 required> <br />
+
+              <!-- password 密码框 用户看不见输入的密码 -->
+              <!-- required 必填 -->
+              
+              密码：<input type="password" name="pwd" required placeholder="请输入密码"> <br />
+
+              <!-- radio 单选按钮 可以实现多选一 -->
+              <!-- name 是表单元素名字 这里性别单选按钮必须有相同名字的name 才可以实现多选1 -->
+              <!-- 单选按钮和复选框可以设置 checked 属性，当页面打开的时候就可以默认选中这个按钮-->
+              性别：男 <input type="radio" name="sex" value="男"> 女 <input type="radio" name="sex" value="女"
+                     checked="checked"> <br />
+
+              <!-- checkbox 复选框 可以实现多选 -->
+              爱好：
+              吃饭 <input type="checkbox" name="hobby[]" value="吃饭"> 
+              睡觉 <input type="checkbox" name="hobby[]" value="睡觉">
+              打豆豆 <input type="checkbox" name="hobby[]" value="打豆豆"> <br />
+
+              <!-- 点击了提交按钮，可以把表单域里的表单元素里面的值提交给后台服务器 -->
+              <input type="submit" value="免费注册">
+
+              <!-- reset 重置按钮可以还原表单元素初始的默认值 -->
+              <input type="reset" value="重置">
+
+              <!-- 普通按钮 button 后期结合js 搭配使用 -->
+              <input type="button" value="获取短信验证码"> <br />
+
+              <!-- 文件域 使用场景 上传文件使用 -->
+              上传头像：<input type="file"> <br />
+
+              <!-- label 可点击文字进行选择 增加用户体验-->
+              性别：<label for="nan">男</label>
+              <input type="radio" name="sex" id="nan">
+              <label for="女">女</label>
+              <input type="radio" name="sex" id="女">（点击文字也可）
+
+ 
+       <h2> select 下拉表单元素</h2>
+  
+              籍贯：
+              <select>
+                     <option selected value="广东">广东</option>
+                     <option value="北京">北京</option>
+                     <option value="天津">天津</option>
+                     <option value="火星">火星</option>
+              </select>
+  
+       <h2>textarea 文本域表单元素</h2>
+   
+              今日反馈：
+              <!-- rows规定行数，cols规定每行字数 -->
+              <textarea name="今日反馈" rows=6 cols=50>习得表单标签以及多种属性和属性值</textarea>
+       </form>
+
+
+       *ctrl + / 注释快捷键<br />
+       <!-- 备注 -->
+       *空&nbsp;&nbsp;格<br />
+       *大于号gt和小于号lt<br />
+       &lt;p&gt;
+
+       <h3>特殊字符</h3>
+       <img src="../imges/oo.png" title="{我真是个机灵鬼}"/>
+
+
+
+       
+
+</body>
+</html>

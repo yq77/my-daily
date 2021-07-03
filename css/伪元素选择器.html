@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>伪元素选择器</title>
+
+       <style>
+              /* 字体声明 */
+              @font-face {
+                     font-family: 'icomoon';
+                     src: url('fonts/icomoon.eot?7gyjy3');
+                     src: url('fonts/icomoon.eot?7gyjy3#iefix') format('embedded-opentype'),
+                            url('fonts/icomoon.ttf?7gyjy3') format('truetype'),
+                            url('fonts/icomoon.woff?7gyjy3') format('woff'),
+                            url('fonts/icomoon.svg?7gyjy3#icomoon') format('svg');
+                     font-weight: normal;
+                     font-style: normal;
+                     font-display: block;
+              }
+
+              /* E：first-line 匹配元素的第一行 */
+              .line:first-line {
+                     color: teal;
+              }
+
+              /* E：first-letter 匹配元素的第一个字母 */
+              .letter::first-letter {
+                     color: yellowgreen;
+                     font-size: 32px;
+              }
+
+              /* E：before E元素之前插入某些内容 */
+              h3:before {
+                     font-family: "icomoon";
+                     content: "";
+                     font-size: 30px;
+                     color:darkgreen;
+              }
+
+              /* E：after E元素之后插入某些内容 */
+              h2:before {
+                     font-family: "icomoon";
+                     content: "";
+                     color: pink;
+
+              }
+       </style>
+</head>
+
+<body>
+       <p class="line">使用：first-line 伪元素 <br />将特殊效果添加到文本的第一行。<br />所以我们需要多几行文字来展示代码结果</p>
+
+       <p class="letter">使用：first-letter 伪元素 匹配到文本的第一个字符</p>
+
+       <h3>:before 伪元素可以在一个元素的内容之前插入内容</h3>
+
+       <h2>:after 伪元素可以在一个元素的内容之后插入内容</h2>
+</body>
+
+</html>

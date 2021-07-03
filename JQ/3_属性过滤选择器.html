@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <script src="../jq.js"></script>
+
+       <style>
+              div {
+                     width: 100px;
+                     height: 100px;
+                     background-color: pink;
+                     margin: 10px;
+              }
+       </style>
+</head>
+<body>
+       <h1>属性过滤选择器</h1>
+       <div class="has"></div>
+       <div class="aaa"></div>
+
+       <span class="ico_1">我的class的属性值以ico开头</span>
+       <span class="ico_2">我的class的属性值以ico开头</span>
+       <span class="ico_3">我的class的属性值以ico开头</span>
+
+       <h1>子元素过滤选择器</h1>
+       
+              <ul>
+                     <li>第一个小li</li>
+                     <li>第二个小li</li>
+                     <li>第三个小li</li>
+                     <li>第四个小li</li>
+                     <li>第五个小li</li>
+              </ul>
+      
+
+              <h1>表单对象属性过滤器</h1>
+              <form action="">
+                     <input disabled value="我不可用"></input>
+                     <input type="text" name="" id="" value="我可用">
+                     <input type="text" value="我可用">
+                     <button disabled>我不可用</button>
+              </form>
+             
+       <script>
+              // [attr] 选取拥有此属性的元素
+              $("div[class]").css("width","200px")
+              // [attr=val] 选取属性值等于val的元素
+              $("div[class = aaa]").css("width","300px")
+              // [attr!=val] 选取属性值不等于val的元素
+
+              // [attr^=val] 选取属性的值以val开头的元素
+              $("span[class^=ico]").css("color","pink")
+
+              // [attr$=val] 选取属性的值以val结束的元素
+              // [attr*=val] 选取属性的值含有val的元素
+              // [attr][attr] 复合属性选择器
+
+              // :nth-child(i) 选取每个父元素下第i个子元素（从1开始）
+              $("li:nth-child(2)").css("color","red")
+
+              // :nth-child(even) 选取每个父元素下偶数元素
+              // :nth-child(odd) 选取每个父元素下奇数元素
+              // :nth-child(3n+1)  选取每个父元素下符合3n+1的元素
+              // :first-child 选取每个父元素的第一个子元素
+              // :last-child 选取每个父元素的最后一个子元素
+              // :only-child 选取父元素中唯一子元素的元素
+
+              // ：enabled  选取所有可用元素
+              $("input:enabled").css("width","300px")
+              // ：disabled  选取所有不可用元素
+              $("input:disabled").css("height","100px")
+
+              // ：checked  选取所有被选中的元素
+              // ：selected  选取所有被选中的选项元素
+
+       </script>
+</body>
+</html>

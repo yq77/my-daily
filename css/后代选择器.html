@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>后代选择器</title>
+       <style>
+              /* 父级元素 自己元素 {css样式} */
+              ol li {
+                     color: pink;
+              }
+
+
+              ol li a {
+                     color: red;
+              }
+
+              /* 只改变最后一个a ,可以增加类名区分两个ul*/
+              .nav li a {
+                     color: yellow;
+              }
+       </style>
+</head>
+<body>
+       <ol>
+              <li>我是ol的后代</li>
+              <li>我是ol的后代</li>
+              <li>我是ol的后代</li>
+              <li><a href="#">我是li的后代</a></li>
+       </ol>
+       <ul>
+              <li>我是ul的后代</li>
+              <li>我是ul的后代</li>
+              <li>我是ul的后代</li>
+              <li><a href="#">我不想变色</a></li>
+       </ul>
+       <ul class="nav">
+              <li>我是ul的后代</li>
+              <li>我是ul的后代</li>
+              <li>我是ul的后代</li>
+              <li><a href="#">我想变黄色</a></li>
+       </ul>
+</body>
+</body>
+</html>

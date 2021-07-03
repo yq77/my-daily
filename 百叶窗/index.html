@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <script src="../jq.js"></script>
+     
+       <style>
+              div {
+                     box-sizing: border-box;
+              }
+              * {
+                     margin: 0;
+                     padding: 0;
+              }
+
+              .nav {
+                     /* overflow: hidden; */
+                     width: 300px;
+                     margin: 0 auto;
+              }
+
+              .title {
+                     width: 100%;
+                     padding-left: 20px;
+                     height: 50px;
+                     line-height: 50px;
+                     font-size: 20px;
+                     font-weight: 700;
+                     color: white;
+                     background-color: pink;
+                     border: 1px solid blue;
+              }
+
+              .content {
+                     display: none;
+                     width: 300px;
+                     height: 200px;
+                     padding: 5px 10px;
+                     line-height: 30px;
+                     font-size: 16px;
+                     background-color: #ccc;
+              }
+       </style>
+</head>
+<body>
+       <div class="nav">
+              <div class="title" data-index = "0">title-one</div>
+              <div class="content">可可爱爱</div>
+       </div>
+       <div class="nav">
+              <div class="title" data-index = "1">title-two</div>
+              <div class="content">奇奇怪怪</div>
+       </div>
+       <div class="nav">
+              <div class="title" data-index = "2">title-three</div>
+              <div class="content">三三两两</div>
+       </div>
+       <div class="nav">
+              <div class="title" data-index = "3">title-four</div>
+              <div class="content">熬夜秃头</div>
+       </div>
+     
+       <script src="index.js"></script>
+</body>
+</html>

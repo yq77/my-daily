@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>购物车</title>
+       <link rel="stylesheet" href="css/index.css">
+       <script src="js/jq.js"></script>
+       <script src="js/index.js"></script>
+       <style>
+              /* 字体声明 */
+              @font-face {
+                     font-family: 'icomoon';
+                     src: url('fonts/icomoon.eot?7gyjy3');
+                     src: url('fonts/icomoon.eot?7gyjy3#iefix') format('embedded-opentype'),
+                            url('fonts/icomoon.ttf?7gyjy3') format('truetype'),
+                            url('fonts/icomoon.woff?7gyjy3') format('woff'),
+                            url('fonts/icomoon.svg?7gyjy3#icomoon') format('svg');
+                     font-weight: normal;
+                     font-style: normal;
+                     font-display: block;
+              }
+
+              @media screen and (max-width:320px) {
+                     html {
+                            font-size: 16px;
+                     }
+                     body {
+                            width: 320px;
+                     }
+              }
+              @media screen and (min-width:768px) {
+                     html {
+                            font-size: 32px;
+                     }
+              }
+
+              @media screen and (min-width:992px) {
+                     html {
+                            font-size: 64px;
+                     }
+              }
+       </style>
+</head>
+
+<body>
+       <div class="head">
+              <div class="head_left">
+                     <div class="icon">
+                            <span class="home"></span>
+                            <span class="wenzi">购物车</span>
+                     </div>
+              </div>
+              <div class="head_right">
+                     <div class="hezi">
+                            <span></span>
+                            <span> | </span>
+                            <span></span>
+                     </div>
+              </div>
+       </div>
+       <div class="bianji">
+              <div class="wenzi_left">
+                     <span>商品库存有限，请尽快下单</span>
+              </div>
+              <div class="wenzi_right"><a href="#">编辑</a></div>
+       </div>
+
+       <div class="body">
+              <!-- <div class="logo">
+                     <span></span>
+              </div>
+              <p>购物车还是空的噢</p> -->
+              <div class="goods">
+                     <div class="check_1">
+                            <img src="images/choiceIcon.png" alt="">
+                     </div>
+                     <div class="fruit">
+                            <div class="head">
+                                   <span><img src="images/shop.png" alt=""></span>
+                                   <span>水果商家1</span>
+                                   <span>></span>
+                            </div>
+                            <div class="fruit_body">
+                                   <div class="shop_p">
+                                          <img src="images/orderFruitpic5.png" alt="">
+                                   </div>
+                                   <span class="wenzi_1">三亚当季时令热带水果网红 金枕榴莲 果大肉质甜嫩</span>
+                                   <span class="wenzi_2">2.5kg(不含)-3kg(含)</span>
+                                   <span class="price">￥10.00</span>
+                                   <span class="youhui">优惠价￥9.00</span>
+                                   <div class="count">
+                                          <div><img src="images/-.png" alt=""></div>
+                                          <div class="num">1</div>
+                                          <div><img src="images/+.png" alt=""></div>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="check_1">
+                            <img src="images/choiceIcon.png" alt="">
+                     </div>
+                     <div class="fruit">
+                            <div class="head">
+                                   <span><img src="images/shop.png" alt=""></span>
+                                   <span>水果商家2</span>
+                                   <span>></span>
+                            </div>
+                            <div class="fruit_body">
+                                   <div class="shop_p">
+                                          <img src="images/orderFruitpic3.png" alt="">
+                                   </div>
+                                   <span class="wenzi_1">三亚当季时令热带水果网红 金枕榴莲 果大肉质甜嫩</span>
+                                   <span class="wenzi_2">2.5kg(不含)-3kg(含)</span>
+                                   <span class="price">￥10.00</span>
+                                   <span class="youhui">优惠价￥9.00</span>
+                                   <div class="count">
+                                          <div><img src="images/-.png" alt=""></div>
+                                          <div class="num">1</div>
+                                          <div><img src="images/+.png" alt=""></div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+              
+       </div>
+
+       <div class="bottom">
+              <div class="bottom_jiesuan">
+                     <form action="">
+                            <div class="form">
+                                   <input type="radio" name="全选">
+                                   <span>全选</span>
+                                   <span>总计：¥0</span>
+                            </div>
+                            <div class="buttom">
+                                   <input type="submit" value="去结算">
+                            </div>
+                     </form>
+              </div>
+
+              <div class="bottom_fenlei">
+                     <div class="tubiao">
+                            <span> <p>首页</p> </span>
+                            <span> <p>分类</p> </span>
+                            <span> <p>购物车</p> </span>
+                            <span> <p>订单</p> </span>
+                            <span> <p>我的</p> </span>
+                     </div>
+                     <!-- <ul class="tubiao">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                     </ul> -->
+                     <!-- <ul class="fenlei_wenzi">
+                            <li>首页</li>
+                            <li>分类</li>
+                            <li>购物车</li>
+                            <li>订单</li>
+                            <li>我的</li>
+                     </ul> -->
+              </div>
+       </div>
+</body>
+
+</html>

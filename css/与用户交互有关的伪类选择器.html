@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>表单伪类选择器</title>
+       <style>
+              input {
+                     margin-bottom: 5px;
+              }
+
+              /* E:enabled 匹配表单中激活状态下的控件 */
+              input:enabled {
+                     background-color: darksalmon;
+              }
+
+              /* E:disabled 匹配表单中禁用状态下的控件 */
+              input:disabled {
+                     background-color: dimgray;
+              }
+
+               /* E:checked 匹配表单中选中状态下的控件 */
+               /* input:checked {
+                     color: brown;
+              } */
+
+               /* E:selection 匹配下拉框选中状态下的控件 */
+              ::selection {
+                    color: red;
+                    
+              }
+       </style>
+</head>
+<body>
+       name:<input type="text" name="" id=""> <br />
+       password: <input type="password"> <br />
+       country: <input type="text" disabled> <br />
+
+       <input type="radio" name="sex[]" id=""> 男
+       <input type="radio" name="sex[]" id=""> 女
+       <input type="checkbox" name="" id="" checked> 人妖
+       <input type="checkbox" name="" id=""> 胡一菲
+
+       
+     
+
+</body>
+</html>

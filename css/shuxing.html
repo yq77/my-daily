@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <style>
+              span {
+                     display: block;
+                     width: 100px;
+                     height: 100px;
+                     line-height: 100px;
+                     background-color: pink;
+                     text-align: center;
+                     text-decoration: underline;
+              }
+              .bg {
+                     width: 200px;
+                     height: 200px;
+                     /* background-color: blue; */
+                     background-image: url(../imges/插图/1.jpg)  ; 
+                     background-repeat: no-repeat;
+                      /* repeat; 重复排列-网页默认
+                      no-repeat; 不重复排列 
+                      repeat-x; 在x轴重复排列
+                      repeat-y; 在y轴重复排列  */
+
+                     /* 位置 background-position:数值 | top | bottom | left | right | center; */
+
+                     /* 简写 background:背景颜色 | 背景图象 | 背景重复 | 背景附件 | 背景位置 ; */
+              }
+
+              .banxin {
+                     width: 200px;
+                     height: 200px;
+                     background-color: tomato;
+                     position: relative;
+                     text-align: center;
+                     line-height: 30px;
+                     /* border-radius: 100px; */
+              }
+
+              .zuo {
+                     width: 30px;
+                     height: 30px;
+                     background-color: thistle;
+                     position: absolute;
+                     top:20px;
+                     left:10px;
+                     border-radius: 15px;
+              }
+
+              
+              .you {
+                     width: 30px;
+                     height: 30px;
+                     background-color: thistle;
+                     position: absolute;
+                     right:10px;
+                     top:20px;
+                     border-radius: 15px;
+              }
+
+              .xia {
+                     width: 30px;
+                     height: 30px;
+                     background-color: thistle;
+                     position: absolute;
+                     left: 85px;
+                     bottom: 10px;
+                     border-radius: 15px;
+              }
+
+       </style>
+</head>
+<body>
+       <h1>文本属性</h1>
+       <span>我们</span>
+
+       <h1>背景属性</h1>
+       <div class="bg">1</div>
+
+       <h1>定位属性</h1>
+       <div class="banxin">
+              <div class="zuo">左</div>
+              <div class="you">右</div>
+              <div class="xia">xia</div>
+       </div>
+
+</body>
+</html>
